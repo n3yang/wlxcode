@@ -134,8 +134,8 @@ body{
 /*go-to-top*/
 a.backToTop {
     display: none;
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     position: fixed;
     _position: absolute;
     right: 0px;
