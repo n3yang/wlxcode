@@ -136,7 +136,7 @@ body{
 /*go-to-top*/
 a.backToTop {
     display: none;
-    width: 400px;
+    width: 300px;
     height: 250px;
     position: fixed;
     _position: absolute;

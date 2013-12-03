@@ -309,9 +309,9 @@ getRolling("gd3")
 
 
 <a class="backToTop">
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="250" width="400"><param name="quality" value="high"><param name="movie" value="http://player.youku.com/player.php/sid/XNTQ2MjYzNzky/v.swf"><embed height="250" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="http://player.youku.com/player.php/sid/XNTQ2MjYzNzky/v.swf" type="application/x-shockwave-flash" width="400"></object>
+<embed align="middle" src="http://static.youku.com/v1.0.0212/v/swf/loader.swf?VideoIDS=XNTQ2MjYzNzky=&amp;isAutoPlay=true&amp;embedid=MTExLjE5Ni4xNzMuMTk4Ajg1OTAxMDc4AgI%3D" allowscriptaccess="never" allownetworking="all" width="300" height="250" allowfullscreen="true" type="application/x-shockwave-flash" allowcriptaccess="sameDomain" quality="high" isautoplay="true">
 </a>
 
-<SCRIPT LANGUAGE="JavaScript" src= http://float2006.tq.cn/floatcard?adminid=9085047&sort=0 ></SCRIPT>
+<script language="JavaScript" src= http://float2006.tq.cn/floatcard?adminid=9085047&sort=0 ></script>
 </body>
 </html>
