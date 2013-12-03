@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background:#6b100d url(../he-img/bg.jpg) center top repeat-x;
+}
+
+.wrap{
+	width:1000px;
+	margin:0 auto;
+}
+.top{
+	height:404px;
+	background:#6b100d url(../he-img/top.jpg) center top repeat-x;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}

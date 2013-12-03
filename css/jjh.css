@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+/*下面是对联广告的css代码*/
+.duilian{top:260px;position:absolute; width:118px;  overflow:hidden; display:none;}
+.duilian_left{ left:6px;}
+.duilian_right{right:20px;}
+.duilian_con{ width:118px; height:300px; overflow:hidden; text-align:center;}
+.duilian_con div{
+	line-height:0;
+}
+.duilian_close{ width:100%; height:24px; line-height:24px; text-align:center; display:block;text-decoration:none;}
+
+
+body{
+	background:#280001 url(../jjh-img/bg.jpg) center top repeat-x;
+}
+
+.base-line{
+	line-height:0;
+	width:1000px;
+	margin:0 auto;
+}
+
+#top{
+	width:100%;
+	height:826px;
+	background:url(../jjh-img/0.jpg) center no-repeat;
+}
+#wrap{
+	width:1000px;
+	margin:0 auto;
+}
+
+#gdbg1{
+	background:url(../jjh-img/6.jpg) center no-repeat;
+}
+#gdbg2{
+	background:url(../jjh-img/11.jpg) center no-repeat;
+}
+#gdbg3{
+	background:url(../jjh-img/17.jpg) center no-repeat;
+}
+.gd{
+	width:850px;
+	height:150px;
+	margin-left:100px;
+	position:relative;
+	overflow:hidden;
+}
+.base-line ul.gdul{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.base-line li{
+	float:left;
+	height:150px;
+	width:auto;
+	margin-right:15px;
+}
+.base-line li img{
+	
+}
+.ly{
+	background:url(../jjh-img/lybg2.gif) repeat-y;
+}
+.lyt{
+	padding:50px 200px 0px 200px;
+	background:url(../jjh-img/lybg.gif) top center no-repeat;
+}
+.lyt .line1{
+	margin:30px 0 0 0;
+}
+.lyt .line1 label{
+	display:inline-block;
+	font-size:14px;
+	color:#000;
+	margin-right:5px;
+	vertical-align: middle;
+	text-align:right;
+	width:50px;
+}
+.lyt .line1 .inputText{
+	padding:3px 8px;
+	font-size:12px;
+	line-height:12px;
+	width:200px;
+	vertical-align: middle;
+	-moz-border-radius: 5px;      
+    -webkit-border-radius: 5px;    
+    border-radius:5px;     	background:#fff;
+	border:1px solid #999;       
+}
+.lyf{
+	height:78px;
+	background:url(../jjh-img/lybg3.gif) center no-repeat;
+}
+.labelTextarea{
+	vertical-align: middle
+}
+.inputTextarea{
+	vertical-align: middle;
+	padding:3px 5px;
+	font-size:12px;
+	line-height:20px;
+	width:500px;
+	height:100px;
+	background:#fff;
+	border:1px solid #999;
+	-moz-border-radius: 5px;     
+    -webkit-border-radius: 5px;  
+    border-radius:5px;   
+}
+.btn{
+	width:207px;
+	height:27px;
+	cursor:pointer;
+	border:none;
+	background:url(../jjh-img/btn.gif) no-repeat;
+}
+.bq{
+	background:#280001;
+	text-align:center;
+	line-height:28px;
+	padding:20px 0;
+}
+.bq p{
+	font-size:14px;
+	line-height:28px;
+	color:#ffe758;
+}
+
+/*go-to-top*/
+a.backToTop {
+    display: none;
+    width: 200px;
+    height: 150px;
+    position: fixed;
+    _position: absolute;
+    right: 0px;
+    bottom: 0px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+}
+a.backToTop:hover{
+    opacity: 1;
+    filter: Alpha(opacity=100);
+}
+.img-pic{
+	width:1000px;
+	height:492px;
+	background:url(../jjh-img/15.jpg) no-repeat;
+	position:relative
+}
+.img-pic a{
+	position:absolute;
+}
+#a1{
+	left:37px;
+	top:38px;
+	width:245px;
+	height:245px;
+}
+#a2{
+	left:310px;
+	top:38px;
+	width:211px;
+	height:145px;
+}
+#a3{
+	left:551px;
+	top:38px;
+	width:245px;
+	height:245px;
+}
+#a4{
+	left:824px;
+	top:38px;
+	width:138px;
+	height:127px;
+}
+#a5{
+	left:37px;
+	top:310px;
+	width:245px;
+	height:160px;
+}
+#a6{
+	left:310px;
+	top:209px;
+	width:211px;
+	height:261px;
+}
+#a7{
+	left:551px;
+	top:310px;
+	width:245px;
+	height:160px;
+}
+#a8{
+	left:824px;
+	top:191px;
+	width:138px;
+	height:127px;
+}
+#a9{
+	left:824px;
+	top:343px;
+	width:138px;
+	height:127px;
+}
