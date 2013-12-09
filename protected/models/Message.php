@@ -56,7 +56,7 @@ class Message extends CActiveRecord
 			array('id, name, mobile, email, address, content, type', 'safe', 'on'=>'search'),
 			array('time_create', 'default', 'value'=>new CDbExpression('NOW()'),
 				'setOnEmpty'=>false, 'on'=>'insert'),
-			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+			// array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 

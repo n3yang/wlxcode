@@ -104,6 +104,7 @@
 					<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50, 'style'=>"vertical-align:top", 'class'=>"inputTextarea")); ?>
 					<?php echo $form->error($model,'content'); ?>
 				</div>
+			<!--
 				<?php if(CCaptcha::checkRequirements()): ?>
 				<div class="line1">
 					<?php echo $form->labelEx($model,'验证码'); ?>
@@ -112,6 +113,7 @@
 					<?php echo $form->error($model,'verifyCode'); ?>
 				</div>
 				<?php endif; ?>
+			-->
 				<div class="line1 buttons">
 					<?php echo CHtml::submitButton('', array('class'=>'btn')); ?>
 				</div>
