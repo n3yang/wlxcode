@@ -79,26 +79,27 @@
 )); ?>
 
 				<p class="note"></p>
-				<div class="line1">
+				<div class="line2">
 					<?php echo $form->labelEx($model,'姓名'); ?>
 					<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'name'); ?>
 				</div>
-				<div class="line1">
+				<div class="line2">
 					<?php echo $form->labelEx($model,'电话'); ?>
 					<?php echo $form->textField($model,'mobile',array('size'=>20,'maxlength'=>20,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'mobile'); ?>
 				</div>
-				<div class="line1">
+				<div class="line2">
 					<?php echo $form->labelEx($model,'邮箱'); ?>
 					<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'email'); ?>
 				</div>
-				<div class="line1">
+				<div class="line2">
 					<?php echo $form->labelEx($model,'地址'); ?>
 					<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>200,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'address'); ?>
 				</div>
+                <div class="base-clear"></div>
 				<div class="line1">
 					<?php echo $form->labelEx($model,'留言'); ?>
 					<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50, 'style'=>"vertical-align:top", 'class'=>"inputTextarea")); ?>

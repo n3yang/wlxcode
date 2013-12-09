@@ -83,6 +83,20 @@ body{
 	text-align:right;
 	width:50px;
 }
+.lyt .line2{
+	float:left;
+	width:50%;
+	margin:30px 0 0 0;
+}
+.lyt .line2 label{
+	display:inline-block;
+	font-size:14px;
+	color:#000;
+	margin-right:5px;
+	vertical-align: middle;
+	text-align:right;
+	width:50px;
+}
 .lyt .line1 .inputText{
 	padding:3px 8px;
 	font-size:12px;
@@ -215,4 +229,23 @@ a.backToTop:hover{
 	top:331px;
 	width:138px;
 	height:127px;
+}
+
+
+.menu {
+	padding-left:10px;
+}
+.menu span.dib{
+	font-family:"微软雅黑";
+	font-size:30px;
+	margin:0 10px;
+	border-bottom:2px solid #ccc;
+	cursor:pointer
+}
+.menu span.active{
+	color:red;
+	border-bottom:2px solid red;
+}
+.box div{
+	display:none;
 }

@@ -11,19 +11,27 @@
 document.oncontextmenu=new Function("event.returnValue=false;");
 document.onselectstart=new Function("event.returnValue=false;");
 </script>  
-</head>
+</head></html>
 
 <body>
 
 <div class="wrap">
-	<div class="top">
-    </div>
 	<div class="base-clear">
     	<div class="left">
-        	<?php echo CHtml::link('<img src="he-img/left.jpg" />', array('site/activity1')) ?></a>
+        	<div>
+        		<?php echo CHtml::link('<img src="he-img/left.jpg" />', array('site/activity1')) ?></a>
+            </div>
+            <div>
+            	<?php echo CHtml::link('<img src="he-img/left2.gif" />', array('site/activity1')) ?></a>
+            </div>
         </div>
     	<div class="right">
-        	<?php echo CHtml::link('<img src="he-img/right.jpg" />', array('site/activity2')) ?></a>
+        	<div>
+        		<?php echo CHtml::link('<img src="he-img/right.jpg" />', array('site/activity2')) ?></a>
+            </div>
+            <div>
+            	<?php echo CHtml::link('<img src="he-img/right2.gif" />', array('site/activity2')) ?></a>
+            </div>
         </div>
     </div>
 </div>
