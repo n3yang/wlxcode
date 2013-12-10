@@ -203,13 +203,13 @@ getRolling("gd3")
 			<img src="jjh-img/14.jpg"></div>
         <div style="background:#870004; overflow:hidden">
         	<div class="menu dib-wrap">
-            	<span class="dib active">加盟支持</span>
+            	<span class="dib">加盟支持</span>
             	<span class="dib">回报周期分析</span>
             	<span class="dib">投资说明</span>
-            	<span class="dib">最新招商政策</span>
+            	<span class="dib active">最新招商政策</span>
             </div>
             <div class="box" style="padding:20px;">
-            	<div style="display:block">
+            	<div>
                 	<h2 style="color:#fff; font-family:'微软雅黑'">让您放心的服务体系，完全解除您的后顾之忧</h2>
                     <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#FFFCE3" style="color: #000; height:24px; font-size:12px; line-height:24px;">
                       <tr>
@@ -469,7 +469,7 @@ getRolling("gd3")
   </tr>
 </table>
                 </div>
-                <div>
+                <div style="display:block">
                 	<img src="jhg-img/222.gif" width="950"/>
                 </div>
             </div>
@@ -528,22 +528,22 @@ $(document).ready(function(e) {
 				<p class="note"></p>
 				<div class="line2">
 					<?php echo $form->labelEx($model,'姓名'); ?>
-					<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200,'class'=>'inputText')); ?>
+					<?php echo $form->textField($model,'name',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'name'); ?>
 				</div>
 				<div class="line2">
 					<?php echo $form->labelEx($model,'电话'); ?>
-					<?php echo $form->textField($model,'mobile',array('size'=>20,'maxlength'=>20,'class'=>'inputText')); ?>
+					<?php echo $form->textField($model,'mobile',array('size'=>25,'maxlength'=>20,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'mobile'); ?>
 				</div>
 				<div class="line2">
 					<?php echo $form->labelEx($model,'邮箱'); ?>
-					<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100,'class'=>'inputText')); ?>
+					<?php echo $form->textField($model,'email',array('size'=>25,'maxlength'=>100,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'email'); ?>
 				</div>
 				<div class="line2">
 					<?php echo $form->labelEx($model,'地址'); ?>
-					<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>200,'class'=>'inputText')); ?>
+					<?php echo $form->textField($model,'address',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
 					<?php echo $form->error($model,'address'); ?>
 				</div>
                 <div class="base-clear"></div>
