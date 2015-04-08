@@ -17,14 +17,6 @@ document.onselectstart=new Function("event.returnValue=false;");
 
 <div class="wrap">
 	<div class="base-clear">
-    	<div class="left">
-        	<div>
-        		<?php echo CHtml::link('<img src="he-img/left.jpg" />', array('site/activity1')) ?></a>
-            </div>
-            <div>
-            	<?php echo CHtml::link('<img src="he-img/left2.gif" />', array('site/activity1')) ?></a>
-            </div>
-        </div>
     	<div class="right">
         	<div>
         		<?php echo CHtml::link('<img src="he-img/right.jpg" />', array('site/activity2')) ?></a>
