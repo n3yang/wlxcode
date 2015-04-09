@@ -12,14 +12,14 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #00B02A;
 }
 
 #header
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	border-top: 3px solid #00B02A;
 }
 
 #content
@@ -38,7 +38,7 @@ body
 	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
+	border-top: 1px solid #00B02A;
 }
 
 #logo
@@ -49,7 +49,7 @@ body
 
 #mainmenu
 {
-	background: #6399cd;
+	background: #00B02A;
 }
 
 #mainmenu ul
@@ -75,7 +75,7 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
+	color: #00B02A;
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
@@ -132,7 +132,7 @@ div.view
 {
 	padding: 10px;
 	margin: 10px 0;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #00B02A;
 }
 
 div.breadcrumbs
@@ -154,8 +154,8 @@ div.breadcrumbs span
 .portlet-decoration
 {
 	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
+	background: #00B02A;
+	border-left: 5px solid #00B02A;
 }
 
 .portlet-title
@@ -164,7 +164,7 @@ div.breadcrumbs span
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
-	color: #298dcd;
+	color: #FFF;
 }
 
 .portlet-content
@@ -173,7 +173,7 @@ div.breadcrumbs span
 	margin: 0;
 	padding: 5px 8px;
 	margin-bottom:15px;
-	background:#EFFDFF;
+	background:##00B02A;
 }
 
 .portlet-content ul
@@ -198,7 +198,7 @@ div.breadcrumbs span
 .post .title
 {
 	font-size: 1.5em;
-	border-bottom: 1px solid #C9E0ED;
+	border-bottom: 1px solid #00B02A;
 }
 
 .post .title a

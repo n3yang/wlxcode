@@ -1,616 +1,481 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>火锅加盟_火锅店加盟_鸡火锅加盟_魏老香餐饮管理（北京）有限公司</title>
-	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/jhg.css">
-	<script>
-
-// document.oncontextmenu=new Function("event.returnValue=false;");
-// document.onselectstart=new Function("event.returnValue=false;");
-
-</script>
-<script>
-$(document).ready(function(e) {
-	
-	$(".img-pic a").fancybox({
-				'overlayShow'	: false,
-				'transitionIn'	: 'elastic',
-				'transitionOut'	: 'elastic',
-				'titleShow'		: false
-			});
-	/*
-	var c = '';
-	
-	for(var i = 0; i<23; i++){
-		var a = "<div class=\"base-line\"><img src=\"jhg-img/"+  i +".jpg\"></div>"
-		c += a
-		$("#wrap").html(c)
-	}
-	*/
-
-var duilian = $("div.duilian");
-var duilian_close = $("a.duilian_close");
-
-var screen_w = screen.width;
-if(screen_w>1024){duilian.show();}
-$(window).scroll(function(){
-	var scrollTop = $(window).scrollTop();
-	duilian.stop().animate({top:scrollTop+260});
-});
-
-
-
-
-function getRolling(rollDiv){
-	var myImg=$("#"+rollDiv);      
-	  
-	myImg.direction=0;
-	
-	var ul = myImg.find("ul");
-	var li = ul.find("li");
-	myImg.w = 0;
-	
-	li.each(function(){
-		myImg.w += ($(this).width() + 15 )
-	})
-	
-	
-	ul.html(ul.html() + ul.html())
-
-	ul.css("width",myImg.w*2)
-
-
-	function to(){
-		myImg.direction += -2;
-				
-		if(parseInt(ul.css("left"))*-1 >= myImg.w){
-			ul.css("left",0)
-			myImg.direction = 0;
-		}else{
-			ul.css("left", myImg.direction);
-		}
-	}
-	
-	myImg.timer=setInterval(to,30);     
-	
-	myImg.mouseover(function(){
-		clearInterval(myImg.timer)
-	})
-	                           
-	myImg.mouseout(function(){
-		myImg.timer=setInterval(to,30)
-	})
-	                    
-}
-
-getRolling("gd1")
-getRolling("gd2")
-getRolling("gd3")
-
-
-	function aa() {
-	    var $backToTopEle = $('.backToTop')
-		$backToTopFun = function() {
-	        var st = $(document).scrollTop(), winh = $(window).height();
-	        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();    
-	        if (!window.XMLHttpRequest) {
-	            $backToTopEle.css("top", st + winh - 166);    
-	        }
-	    };
-	    $(window).bind("scroll", $backToTopFun);
-	    $(function() { $backToTopFun(); });
-	};
-	
-	aa()
-});
-</script>
-<?php if ($_GET['success']) { echo '<script>alert("留言成功，感谢您的留言，我们将尽快与您取得联系")</script>'; } ?>
-</head>
-
-<body>
-	<div id="top">
-    	<div class="base-line">
-            <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="margin-left:230px;" align="middle" width="278" height="826">
-            <param name="movie" value="jhg-img/food.swf" />
-            <param name="quality" value="high" />
-            <param name="wmode" value="transparent" />
-            <param name="swfversion" value="6.0.65.0" />
-            <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
-            <param name="expressinstall" value="Scripts/expressInstall.swf" />
-            <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
-            <!--[if !IE]>-->
-            <object type="application/x-shockwave-flash" data="jhg-img/food.swf" style="margin:0 auto" align="middle" width="278" height="826">
-            <!--<![endif]-->
-            <param name="quality" value="high" />
-            <param name="wmode" value="transparent" />
-            <param name="swfversion" value="6.0.65.0" />
-            <param name="expressinstall" value="Scripts/expressInstall.swf" />
-            <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
-            <div>
-            <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
-            <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
-            </div>
-            <!--[if !IE]>-->
-            </object>
-            <!--<![endif]-->
-            </object>
-      </div>
-    </div>
-	<div id="wrap">
-		<div class="base-line">
-			<img src="jhg-img/1.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/2.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/3.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/4.jpg"></div>
-        <div style="padding-right:1px; width:999px" class="base-line">
-        	<div style="height:20px; background:#f5f5f5"></div>
-        </div>
-		<div id="gdbg1" class="base-line">
-        	<div id="gd1" class="gd">
-                <ul class="base-clear gdul">
-                    <li><img src="jhg-img/img/1.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/2.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/3.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/4.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/5.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/6.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/7.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/8.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/9.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/10.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img/11.jpg" width="226" /></li>
-                </ul>
-            </div>
-        </div>
-        <div style="padding-right:1px; width:999px" class="base-line">
-        	<div style="height:20px; background:#f5f5f5"></div>
-        </div>
-		<div class="base-line">
-			<img src="jhg-img/5.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/6.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/7.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/8.jpg"></div>
-		<div id="gdbg2" class="base-line">
-        	<div id="gd2" class="gd">
-                <ul class="base-clear gdul">
-                    <li><img src="jhg-img/img2/1.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/2.jpg" width="225" /></li>
-                    <li><img src="jhg-img/img2/3.jpg" width="278" /></li>
-                    <li><img src="jhg-img/img2/4.jpg" width="113" /></li>
-                    <li><img src="jhg-img/img2/5.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/6.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/7.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/8.jpg" width="251" /></li>
-                    <li><img src="jhg-img/img2/9.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/10.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img2/11.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img2/12.jpg" width="113" /></li>
-                    <li><img src="jhg-img/img2/13.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/14.jpg" width="225" /></li>
-                    <li><img src="jhg-img/img2/15.jpg" width="225" /></li>
-                    <li><img src="jhg-img/img2/16.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img2/17.jpg" width="201" /></li>
-                    <li><img src="jhg-img/img2/18.jpg" width="266" /></li>
-                    <li><img src="jhg-img/img2/19.jpg" width="200" /></li>
-                </ul>
-            </div>
-        </div>
-        <div style="padding-right:1px; width:999px" class="base-line">
-        	<div style="height:20px; background:#f5f5f5"></div>
-        </div>
-		<div class="base-line">
-			<img src="jhg-img/10.jpg"></div>
-		<div class="base-line">
-			<img src="jhg-img/11.jpg"></div>
-        <div style="background:url(jhg-img/bbbg.gif); overflow:hidden">
-        	<div class="menu dib-wrap">
-            	<span class="dib">加盟支持</span>
-            	<span class="dib">回报周期分析</span>
-            	<span class="dib">投资说明</span>
-            	<span class="dib active">最新招商政策</span>
-            </div>
-            <div class="box" style="padding:20px;">
-            	<div>
-                	<h2>让您放心的服务体系，完全解除您的后顾之忧</h2>
-                    <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#000000" style="color: #fff; height:24px; font-size:12px; line-height:24px;">
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">选址评估</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">协助加盟商对该地区商铺进行选址评估，商圈分析；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">店面VI设计</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">提供整套VI识别系统方案；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">店面规划</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">帮助加盟商对整体店面布局进行详细规划；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">装修指导</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">提供装修方案，协助加盟商进行整店装修；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">技术培训</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">所有总部产品免费进行培训指导，使之达到独立操作；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">高层管理培训</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">对连锁店管理层进行日常管理、服务规范等系统培训；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">人员培训</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">协助连锁店进行开业前期人员培训；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">开业策划方案</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">结合连锁店当地特点，制定开业策划方案及营销方案；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">代店指导</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部会派代店经理进行技术指导，协助连锁店开业；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">设备提供</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部提供专业的电磁炉及各种餐具、工装、桌椅等，保质保量；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">物流配送</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部与大型物流公司长期合作，保证货物运输能够及时准确的配送到加盟商所在地；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">核心原料供应</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部提供核心原料，保证连锁店产品口味统一；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">广告宣传支持</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部会不定期在各省乃至全国各大媒体投放广告宣传；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">营业额预估</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部会按照季节性变化，对连锁店进行详细的销售额预估；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">营运问题诊断</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">如连锁店在经营过程中出现营运问题，公司会派专人进行详细诊断，并且拿出整改方案，帮助连锁店解决难题；</td>
-                      </tr>
-                      <tr>
-                        <td bgcolor="#666666" style="padding-left:5px">技术开发</td>
-                        <td bgcolor="#FFFFFF" style="color: #000; padding-left:5px">总部会不定期研发新产品，免费提供</td>
-                      </tr>
-                    </table>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>
+            魏老香火锅加盟官网,魏老香火锅加盟电话,魏老香火锅加盟流程,《地纬商机网》免费咨询
+        </title>
+        <meta name="keywords" content="餐饮,火锅,餐饮连锁加盟,地纬商机网">
+        <meta name="description" content="魏老香以祖传特色系列锅底技术为核心,集特色,美味,营养与时尚于一体,火爆的市场受到投资者极度关注.魏老香创造的火锅美食文化,不仅在菜品的精益求精;环境的恢弘精雅;服务的至臻至善,更在于魏老香所推崇的&quot;食绿色,品艺术&quot;的美食理念,融合了传统火锅的美食精髓,让火锅回归传统风味,让投资稳赚稳赢.
+        ">
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+        <?php if ($_GET['success']) { echo '<script>alert("留言成功，感谢您的留言，我们将尽快与您取得联系")</script>'; } ?>
+    </head>
+    
+    <body style=" background-color:#fff;">
+        <div id="wrap">
+            <!--魏老香火锅开始-->
+            <div id="main">
+                <div class="content">
+                    <img src="images/index_01.jpg">
                 </div>
-                <div>
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" style="font-size:12px; background:#333">
-  <tr>
-    <td colspan="5" align="center" bgcolor="#FFFFFF" style="padding:5px; font-size:14px;">魏老香回报周期分析（150/200/300）㎡</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">店铺类型</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">普通店</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">标准店</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">旗舰店</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">店铺面积（㎡）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">150㎡</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">200㎡</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">300㎡</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">店铺投资（万元）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">14</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">23</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">36</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">预估餐位（个）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">60--70</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">90--100</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">120--150</td>
-  </tr>
-  <tr>
-    <td rowspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">上座率</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">上午</td>
-    <td colspan="3" align="center" bgcolor="#FFFFFF" style="padding:5px">70%</td>
-  </tr>
-  <tr>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">下午</td>
-    <td colspan="3" align="center" bgcolor="#FFFFFF" style="padding:5px">120%</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">人均消费（元）</td>
-    <td colspan="3" align="center" bgcolor="#FFFFFF" style="padding:5px">48</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">日营业额（元）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">5500-6400</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">8200-9000</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">11000-14000</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">月营业额（万元）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">16.5--19.2</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">24.6--27</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">33--42</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">年营业额（万元）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">198--230.4</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">295.2--324</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">396--504</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">利润率</td>
-    <td colspan="3" align="center" bgcolor="#FFFFFF" style="padding:5px">20%</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">年净利润（万元）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">39.6--46</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">59&#8212;64.8</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">79.2&#8212;100.8</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bgcolor="#FFFFFF" style="padding:5px">投资回报（月）</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">10--12</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">10--12</td>
-    <td align="center" bgcolor="#FFFFFF" style="padding:5px">10--12</td>
-  </tr>
-  <tr>
-    <td colspan="5" align="left" bgcolor="#FFFFFF" style="padding:5px">备注：<br />
-      1、以上投资收益预算不含前期房屋押金及总部管理费用投入；<br />
-    2、因火锅行业淡旺季销售略有差异，根据总部多年投资经验，正常投资回报期为10-12个月。</td>
-  </tr>
-</table>
+                <div class="content">
+                    <img src="images/index_02.jpg">
                 </div>
-                <div>
-<table width="100%" border="0" cellpadding="0" cellspacing="1" style="font-size:12px; background:#333">
-  <tr>
-    <td colspan="5" align="center" bgcolor="#FFFFFF" style="font-size:14px;padding:5px">魏老香投资说明（150/200/300）㎡</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">项目</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">店铺标准</td>
-    <td rowspan="2" bgcolor="#FFFFFF" style="padding:5px">说&nbsp;&nbsp;&nbsp;&nbsp;明</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">店型</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">普通店</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">标准店</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">旗舰店</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">总面积<br />
-    （平方米）</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">150㎡</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">200㎡</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">300㎡</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">前厅、后厨、更衣间、卫生间</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">预估厨房面积<br />
-    （平方米）</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">根据实际情况 30㎡&#8212;&#8212;60㎡</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">摘菜区、切配区、洗碗区、配锅区、炒鸡区、储藏区、小料区、凉菜区、垃圾间</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">预估座位数<br />
-    （个）</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">60--70</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">90--100</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">120--150</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">按照房屋面积、格局情况而定</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">总部收取<br />
-      连营合作费<br />
-    （万元/年）</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">每年收取连营店 
-      2万元 
-    连锁经营费</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">总部将魏老香鸡火锅店经营权授予连营商，并许可连营商使用魏老香商标、标示、整套VI识别系统、经营模式、所有经营产品及技术，并颁发：授权书、商标使用证明、开店资格证、授权铜牌及各行业协会颁发的荣誉铜牌。</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">店面设计费<br />
-    （万元）</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">总部免费提供设计方案</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">餐厅门头设计图|平面布置图|局部施工图</td>
-  </tr>
-  <tr>
-    <td rowspan="2" bgcolor="#FFFFFF" style="padding:5px">装修金额<br />
-    （万元）</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">5万&#8212;10万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">10万&#8212;20万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">20万&#8212;40万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">天花、地面、墙面、水电安装、桌椅等</td>
-  </tr>
-  <tr>
-    <td colspan="4" bgcolor="#FFFFFF" style="padding:5px">高、中、低三种装修模式自由选择，按照投资能力大小进行装修预算。 
-      普通型：要求：干净、明亮、简洁。一般费用在：5万&#8212;10万之间。 
-      标准型：要求：时尚、新颖、前卫。一般费用在：10万&#8212;20万之间。 
-    旗舰型：要求：与总部统一风格。一般费用在：20万&#8212;40万之间。</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">设备及杂件<br />
-    （万元）</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">6万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">8万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">10万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">包括：（空调、冰箱、排风、厨房设备、餐厨具、收银系统、物料、办公用品等）。</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">&nbsp;开办费<br />
-    （万元）</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">1万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">含开店前办理证照费、交际费、其他杂费</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">流动资金<br />
-    （万元）</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">2万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">3万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">5万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">开业第一批食材准备金。</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">总投资<br />
-      （万元） 
-    不含房租</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">14万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">23万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">36万</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">含：装修金额、厨房设备金额、桌椅餐具、开办费的总投资。（此费用是在北京地区投资参考，在其他城市或多或少增减）。</td>
-  </tr>
-  <tr>
-    <td bgcolor="#FFFFFF" style="padding:5px">投资回报期</td>
-    <td colspan="3" bgcolor="#FFFFFF" style="padding:5px">预计</td>
-    <td bgcolor="#FFFFFF" style="padding:5px">10-12个月根据实际情况，略有不同</td>
-  </tr>
-  <tr>
-    <td colspan="5" bgcolor="#FFFFFF" style="padding:5px">以上投资金额为连营店的投资预估参考，实际金额由餐厅设备、装修及运营筹备实际需求而定。</td>
-  </tr>
-</table>
+                <div class="content">
+                    <img src="images/index_03.jpg">
                 </div>
-                <div style="display:block">
-                	<img src="jhg-img/222.gif" width="950"/>
+                <div id="content_main">
+                    <div id="info1">
+                        火锅市场喷金爆银，但竞争也异常激烈。魏老香仅用10年时间，便成长为与海底捞、小肥羊、皇城老妈、东来顺等行业大牌平起平坐的新贵，并做到不可撼动的宗师地位！
+                    </div>
+                    <div id="info2">
+                        <p>
+                            口味差异化
+                        </p>
+                        吃火锅你有很多选择，吃酱香火锅只有魏老香可以选择
+                    </div>
+                    <div id="info3">
+                        <p>
+                            消费大众化
+                        </p>
+                        火锅本是大众消费品，必须扎根大众消费才能持续发展
+                    </div>
+                    <div id="info4">
+                        <p>
+                            经营标准化
+                        </p>
+                        魏老香火锅采用标准化经营，无需经验、无需厨艺，全程整店输出，千店口味如一
+                    </div>
+                    <div class="content">
+                        <img src="images/index_04.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div style=" position: absolute; margin:0 0; z-index:2;">
+                        <img src="images/wt.png">
+                    </div>
+                    <!--下面是向右滚动代码-->
+                    <div id="colee_right">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td id="colee_right1" valign="top" align="center">
+                                        <table cellpadding="2" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr align="center">
+                                                    <td>
+                                                        <img src="images/a1.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a2.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a3.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a4.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a5.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a6.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a7.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a8.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a9.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a10.jpg">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td id="colee_right2" valign="top">
+                                        <table cellpadding="2" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr align="center">
+                                                    <td>
+                                                        <img src="images/a1.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a2.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a3.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a4.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a5.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a6.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a7.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a8.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a9.jpg">
+                                                    </td>
+                                                    <td>
+                                                        <img src="images/a10.jpg">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <script>
+                        var speed = 15 //速度数值越大速度越慢
+                        var colee_right2 = document.getElementById("colee_right2");
+                        var colee_right1 = document.getElementById("colee_right1");
+                        var colee_right = document.getElementById("colee_right");
+                        colee_right2.innerHTML = colee_right1.innerHTML
+                        function Marquee4() {
+                            if (colee_right.scrollLeft <= 0) colee_right.scrollLeft += colee_right2.offsetWidth
+                            else {
+                                colee_right.scrollLeft--
+                            }
+                        }
+                        var MyMar4 = setInterval(Marquee4, speed);
+                        colee_right.onmouseover = function() {
+                            clearInterval(MyMar4)
+                        }
+                        colee_right.onmouseout = function() {
+                            MyMar4 = setInterval(Marquee4, speed)
+                        }
+                    </script>
+                    <!--向右滚动代码结束-->
+                    <div class="content">
+                        <img src="images/index_05.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/index_06.jpg">
+                </div>
+                <div id="content_main">
+                    <div id="info5">
+                        醇香浓郁的汤底有别于市场上所有的火锅口味，魏老香酱香火锅能迅速从竞品中脱颖而出，靠的就是这与众不同的特色。
+                        <br>
+                        魏老香核心料包，源自魏氏家族代代传承，内含几十味香料，经过多道工序制作、冷却、封装和严格的检验，并通过魏老香的冷链配送到全国各加盟店中。所以，每一位顾客品尝到的都是纯正的魏氏酱香，不但过口不忘，而且杜绝了其他品牌模仿和抄袭。
+                    </div>
+                    <div id="sp_01">
+                        <embed src="http://player.youku.com/player.php/sid/XODQ2NDExNDcy/v.swf"
+                        allowfullscreen="true" quality="high" width="432" height="265" align="middle"
+                        allowscriptaccess="always" type="application/x-shockwave-flash">
+                    </div>
+                    <div class="content">
+                        <img src="images/index_07.jpg">
+                    </div>
+                    <div class="content">
+                        <img src="images/index_08.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info6">
+                        众所周知，午餐与晚餐是一天中就餐的高峰时段，也是餐厅盈利的黄金时间，过时不候！
+                        <br>
+                        为了提升黄金时段的创利效率，魏老香经过多次技术改良，实现了6分钟上桌的极限速度，大大提高了黄金时段的翻台速度，不但能提高顾客满意度，而且有效增加利润产出！
+                    </div>
+                    <div class="content">
+                        <img src="images/index_09.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info7">
+                        口味独到
+                        <br>
+                        所以被记住
+                    </div>
+                    <div id="info8">
+                        大众消费
+                        <br>
+                        所以被喜欢
+                    </div>
+                    <div id="info9">
+                        严控品质
+                        <br>
+                        所以被信赖
+                    </div>
+                    <div id="info10">
+                        产地限定
+                        <br>
+                        所以被推崇
+                    </div>
+                    <div id="info11">
+                        1300年不变的魏家酱香配方，中国酱香火锅的开山鼻祖，醇厚回味的浓香让食客赞不绝口！
+                    </div>
+                    <div id="info12">
+                        人均50元客单，足锅足料，加上酣畅淋漓的氛围，有钱人不跌份、普通人没压力，当然人气鼎盛！
+                    </div>
+                    <div id="info13">
+                        不添加化学香精，不使用人造色素，完全利用天然食材与辛香料调配出诱人味道，身体零负担！
+                    </div>
+                    <div id="info14">
+                        所有香料均采用产地限购原则，确保了底料与小料的香味醇厚！
+                    </div>
+                    <div class="content">
+                        <img src="images/index_10.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/index_11.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_12.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_13.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_14.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_15.jpg">
+                </div>
+                <div id="content_main">
+                    <div id="info15">
+                        魏老香经营10年，团队成熟、实力强大，全国各地均有样板，跟随成熟品牌可少走弯路！
+                    </div>
+                    <div id="info16">
+                        魏老香走的是大众路线，装修风格独特但造价低廉，即使开大店，也不需要大笔的装修投入！
+                    </div>
+                    <div id="info17">
+                        魏老香核心料包在中央厨房完成，所以店面仅需要少量配菜工即可，人员配置大大降低！
+                    </div>
+                    <div id="info18">
+                        做魏老香火锅不需聘请大厨，节省了最大的人员开支，更无需担心跳槽导致顾客流失。
+                    </div>
+                    <div class="content">
+                        <img src="images/index_16.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info19">
+                        魏老香无需炒料间、不需专门的后厨，餐厅面积利用率更高，投入产出比更高！
+                    </div>
+                    <div id="info20">
+                        经营没有油烟，不但消费者满意度更高，选址也没有局限，商场、超市任你选。
+                    </div>
+                    <div id="info21">
+                        魏老香优势与模式让消费者回头率更高，拥有稳定的客群，你的生意当然更有保障！
+                    </div>
+                    <div class="content">
+                        <img src="images/index_17.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info22">
+                        如果有人曾因资金不足而与事业无缘，如果有人曾因店型盈利能力不足而放弃投资，那么在魏老香的品牌阵营中，这样的事情将不再发生！魏老香打造阶梯式投资方案，让不同资金、不同起点、不同区域的加盟者都能找到适合自己的投资方式——
+                    </div>
+                    <div class="content">
+                        <img src="images/index_18.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/index_19.jpg">
+                </div>
+                <div id="content_main">
+                    <div id="info23">
+                        告别黄金商铺，利用自家厨房就能轻松创业！社区店以外卖外送为主，小微投资，超大回报！
+                    </div>
+                    <div id="info24">
+                        开在大型商场、超市或美食城中，租用档口做厨房，消费者利用公共就餐区进餐，同时可进行近距离送餐服务，投资小、人气高！
+                    </div>
+                    <div id="info25">
+                        适合于全国多数城市的投资模式，成本易控，回报稳定！
+                    </div>
+                    <div id="info26">
+                        成熟店型，翻台惊人。盈利能力强，翻台率高，有效规避风险！
+                    </div>
+                    <div id="info27">
+                        总部直营店型，特别吸引聚会、宴请等大额消费，百万级年利的高回报店型！
+                    </div>
+                    <div id="info28">
+                        总部承诺最长18个月收回投资，如果未能实现，则有总部补贴差额。全程托管经营，做真正的甩手掌柜！
+                    </div>
+                    <div class="content">
+                        <img src="images/index_20.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/index_21.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_22.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_23.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_24.jpg">
+                </div>
+                <div id="content_main">
+                    <div id="info29">
+                        1、考察现场：参观总部与直营店，品尝美食。
+                        <br>
+                        2、确定商圈：听取总部顾问的投资建议。
+                        <br>
+                        3、竞品分析：分析区域竞品信息，确定产品线。
+                        <br>
+                        4、实习机会：接受全方位培训，亲身餐厅实习。
+                        <br>
+                        5、装修设计：根据总部提供的装修方案进行设计。
+                        <br>
+                        6、物料设计：提供终端宣传资料设计。
+                    </div>
+                    <div class="content">
+                        <img src="images/index_25.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info30">
+                        1、装修监理：远程指导店面装修及施工，并提供装修预算参考。
+                        <br>
+                        2、手续办理：协助报批消防、工商、税务等手续。
+                        <br>
+                        3、物料采购：提供制作烹饪设备的订购、安装、调试。
+                        <br>
+                        4、人员招聘：协助提供专业的人才招聘及薪酬管理方案。
+                        <br>
+                        5、运营指导：提供全套店铺经营管理手册。
+                        <br>
+                        6、基层培训：提供基层员工培训与团队建设指导方案。
+                    </div>
+                    <div class="content">
+                        <img src="images/index_26.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info31">
+                        1、新品支持：新品免费培训指导，确保新品不断。
+                        <br>
+                        2、促销支持：提供各类广告设计和节假日促销方案的服务。
+                        <br>
+                        3、专人巡店：不定期每年专人巡店，提升店内经营业绩。
+                        <br>
+                        4、广告助力：总部保持广告支持，拉动终端消费。
+                        <br>
+                        5、品质控制：提供远程可视化管理，确保餐品品质。
+                        <br>
+                        6、持续培训：长期免费的持续培训和营销策划支持。
+                    </div>
+                    <div class="content">
+                        <img src="images/index_27.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info32">
+                        魏老香餐饮管理（北京）有限公司是行业知名的连锁餐饮企业。系“中国烹饪协会会员”、“中国饭店协会会员”、“火锅专业委员 会委员”，荣获“中华名火锅”、“中国诚信AAA企业”等荣誉称号。公司在2014年分别被评为“中国最具投资潜力火锅”、“中国火锅
+                        领军品牌”。
+                    </div>
+                    <div class="content">
+                        <img src="images/index_28.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info33">
+                        全国数百家门店，北京、河北、河南、山东、山西、辽宁、吉林、陕西、甘肃、宁夏……
+                    </div>
+                    <div class="content">
+                        <img src="images/index_29.jpg">
+                    </div>
+                </div>
+                <div id="content_main">
+                    <div id="info34">
+                        还犹豫什么？
+                        <br>
+                        赶紧加入魏老香火锅财富计划吧！
+                    </div>
+                    <div class="content">
+                        <img src="images/index_30.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/index_31.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_32.jpg">
+                </div>
+                <div class="content">
+                    <img src="images/index_33.jpg">
                 </div>
             </div>
+            <!--魏老香火锅结束-->
         </div>
-<script>
-$(document).ready(function(e) {
-	$(".menu span").click(function(){
-		$(".menu span").removeClass("active");
-		$(this).addClass("active");
-		$(".box div").hide().eq($(this).index()).show();
-	})
-})
-</script>
-		<div class="base-line img-pic">
-        	<a id="a1" href="jhg-img/big/1.jpg" title="点击放大"></a>
-            <a id="a2" href="jhg-img/big/2.jpg" title="点击放大"></a>
-            <a id="a3" href="jhg-img/big/3.jpg" title="点击放大"></a>
-            <a id="a4" href="jhg-img/big/4.jpg" title="点击放大"></a>
-            <a id="a5" href="jhg-img/big/5.jpg" title="点击放大"></a>
-            <a id="a6" href="jhg-img/big/6.jpg" title="点击放大"></a>
-            <a id="a7" href="jhg-img/big/7.jpg" title="点击放大"></a>
-            <a id="a8" href="jhg-img/big/8.jpg" title="点击放大"></a>
-            <a id="a9" href="jhg-img/big/9.jpg" title="点击放大"></a>
-		</div>
-		<div id="gdbg3" class="base-line">
-        	<div id="gd3" class="gd">
-                <ul class="base-clear gdul">
-                    <li><img src="jhg-img/img3/1.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img3/2.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img3/3.jpg" width="200" /></li>
-                    <li><img src="jhg-img/img3/4.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img3/5.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img3/6.jpg" width="226" /></li>
-                    <li><img src="jhg-img/img3/7.jpg" width="226" /></li>
-                </ul>
-            </div>
-        </div>
-		<div class="base-line">
-			<img src="jhg-img/14.jpg"></div>
-		<div class="base-line ly">
+        <div class="base-line ly">
 
-
-
-
-        	<div class="lyt">
-
+        <div class="lyt">
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'message-form',
-	'enableAjaxValidation'=>false,
-	'enableClientValidation'=>true,
-	'clientOptions'=>array('validateOnSubmit'=>true),
+  'id'=>'message-form',
+  'enableAjaxValidation'=>false,
+  'enableClientValidation'=>true,
+  'clientOptions'=>array('validateOnSubmit'=>true),
 
 )); ?>
 
-				<p class="note"></p>
-				<div class="line2">
-					<?php echo $form->labelEx($model,'姓名'); ?>
-					<?php echo $form->textField($model,'name',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
-					<?php echo $form->error($model,'name'); ?>
-				</div>
-				<div class="line2">
-					<?php echo $form->labelEx($model,'电话'); ?>
-					<?php echo $form->textField($model,'mobile',array('size'=>25,'maxlength'=>20,'class'=>'inputText')); ?>
-					<?php echo $form->error($model,'mobile'); ?>
-				</div>
-				<div class="line2">
-					<?php echo $form->labelEx($model,'邮箱'); ?>
-					<?php echo $form->textField($model,'email',array('size'=>25,'maxlength'=>100,'class'=>'inputText')); ?>
-					<?php echo $form->error($model,'email'); ?>
-				</div>
-				<div class="line2">
-					<?php echo $form->labelEx($model,'地址'); ?>
-					<?php echo $form->textField($model,'address',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
-					<?php echo $form->error($model,'address'); ?>
-				</div>
+        <p class="note"></p>
+        <div class="line2">
+          <?php echo $form->labelEx($model,'姓名'); ?>
+          <?php echo $form->textField($model,'name',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
+          <?php echo $form->error($model,'name'); ?>
+        </div>
+        <div class="line2">
+          <?php echo $form->labelEx($model,'电话'); ?>
+          <?php echo $form->textField($model,'mobile',array('size'=>25,'maxlength'=>20,'class'=>'inputText')); ?>
+          <?php echo $form->error($model,'mobile'); ?>
+        </div>
+        <div class="line2">
+          <?php echo $form->labelEx($model,'邮箱'); ?>
+          <?php echo $form->textField($model,'email',array('size'=>25,'maxlength'=>100,'class'=>'inputText')); ?>
+          <?php echo $form->error($model,'email'); ?>
+        </div>
+        <div class="line2">
+          <?php echo $form->labelEx($model,'地址'); ?>
+          <?php echo $form->textField($model,'address',array('size'=>25,'maxlength'=>200,'class'=>'inputText')); ?>
+          <?php echo $form->error($model,'address'); ?>
+        </div>
                 <div class="base-clear"></div>
-				<div class="line1">
-					<?php echo $form->labelEx($model,'留言'); ?>
-					<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50, 'style'=>"vertical-align:top", 'class'=>"inputTextarea")); ?>
-					<?php echo $form->error($model,'content'); ?>
-				</div>
-			<!--
-				<?php if(CCaptcha::checkRequirements()): ?>
-				<div class="line1">
-					<?php echo $form->labelEx($model,'验证码'); ?>
-					<?php echo $form->textField($model,'verifyCode', array('class'=>'inputText','style'=>'width:80px')); ?>
-					<?php $this->widget('CCaptcha'); ?>
-					<?php echo $form->error($model,'verifyCode'); ?>
-				</div>
-				<?php endif; ?>
-			-->
-				<div class="line1 buttons">
-					<?php echo CHtml::submitButton('', array('class'=>'btn')); ?>
-				</div>
-
-<?php $this->endWidget(); ?>
-
-            </div>
+        <div class="line1">
+          <?php echo $form->labelEx($model,'留言'); ?>
+          <?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50, 'style'=>"vertical-align:top", 'class'=>"inputTextarea")); ?>
+          <?php echo $form->error($model,'content'); ?>
         </div>
-		<div class="base-line">
-			<img src="jhg-img/16.jpg"></div>
-  <div class="base-line bq">
-        	<p>
-            	魏老香餐饮管理（北京）有限公司
-            </p>
-        	<p>
-            	地址：北京市亦庄开发区 全国免费热线：400-6678-982  官方网站：<a href="http://www.weilaoxiang.com/" target="_blank">www.weilaoxiang.com</a>
-</p>
-        	<p>
-            	版权声明：以上图片均为 魏老香餐饮管理（北京）有限公司 所有 不得盗用，违者必究
-            </p>
-            <p>
-                <script type="text/javascript">
-                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F837270db8e7fe5d35eb093033c1a9128' type='text/javascript'%3E%3C/script%3E"));
-                </script>
-            </p>
+      <!--
+        <?php if(CCaptcha::checkRequirements()): ?>
+        <div class="line1">
+          <?php echo $form->labelEx($model,'验证码'); ?>
+          <?php echo $form->textField($model,'verifyCode', array('class'=>'inputText','style'=>'width:80px')); ?>
+          <?php $this->widget('CCaptcha'); ?>
+          <?php echo $form->error($model,'verifyCode'); ?>
         </div>
-	</div>
+        <?php endif; ?>
+      -->
+        <div class="line1 buttons">
+          <?php echo CHtml::submitButton('', array('class'=>'btn')); ?>
+        </div>
 
+        <?php $this->endWidget(); ?>
 
-<!--sp-->
+        </div>
+      </div>
 
-<a class="backToTop">
-<embed align="middle" src="http://static.youku.com/v1.0.0212/v/swf/loader.swf?VideoIDS=XNTQ2MjYzNzky=&amp;isAutoPlay=true&amp;embedid=MTExLjE5Ni4xNzMuMTk4Ajg1OTAxMDc4AgI%3D" allowscriptaccess="never" allownetworking="all" width="300" height="250" allowfullscreen="true" type="application/x-shockwave-flash" allowcriptaccess="sameDomain" quality="high" isautoplay="true">
-</a>
-
-<script language="JavaScript" src= http://float2006.tq.cn/floatcard?adminid=9085047&sort=0 ></script>
-
-</body>
+        <script type="text/javascript" src="http://cs.ecqun.com/?id=534561" charset="utf-8"></script>
+    </body>
 </html>
