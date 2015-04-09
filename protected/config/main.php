@@ -50,8 +50,6 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=test',
 			'emulatePrepare' => true,
-			'username' => 'weilaoxiang',
-			'password' => 'hr2jme5m',
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
