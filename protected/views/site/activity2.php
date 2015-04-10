@@ -477,5 +477,12 @@
       </div>
 
         <script type="text/javascript" src="http://cs.ecqun.com/?id=534561" charset="utf-8"></script>
+
+    
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F837270db8e7fe5d35eb093033c1a9128' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
     </body>
 </html>
